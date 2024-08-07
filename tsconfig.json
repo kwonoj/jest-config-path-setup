@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es6",
+    "lib": [
+      "es2015",
+      "dom",
+      "dom.iterable",
+      "es2017.object",
+      "es2018.promise",
+      "es2016.array.include",
+      "es2019.array",
+      "es2020"
+    ],
+    "sourceMap": true,
+    "noEmit": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["./*", "../lib/*"],
+      "merge-ranges": ["../types/merge-ranges/"],
+      "react-intl-formatted-duration": [
+        "../types/react-intl-formatted-duration/"
+      ],
+      "hls.js/dist/hls.light": ["../node_modules/hls.js/dist/hls.js.d.ts"]
+    },
+    "typeRoots": ["./node_modules/@types", "./lib"],
+    "rootDirs": ["lib", "src"],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "config",
+    "data",
+    "lib",
+    "node_modules",
+    "proxy",
+    "tests",
+    "tools",
+    "tmp",
+    "**/*.tmp.ts*"
+  ]
+}
